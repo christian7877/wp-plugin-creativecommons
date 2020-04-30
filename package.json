@@ -1,13 +1,17 @@
 {
-	"name": "cc-block-cgb-guten-block",
-	"version": "1.0.0",
-	"private": true,
-	"scripts": {
-		"start": "cgb-scripts start",
-		"build": "cgb-scripts build",
-		"eject": "cgb-scripts eject"
-	},
-	"dependencies": {
-		"cgb-scripts": "1.20.0"
-	}
+  "name": "cc-block-cgb-guten-block",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cgb-scripts start",
+    "build": "cgb-scripts build",
+    "eject": "cgb-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "cgb-scripts": "1.20.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
